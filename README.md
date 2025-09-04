@@ -9,7 +9,7 @@ USAGE:
    pipe-for-parallel [global options] command [command options]
 
 VERSION:
-   0.1.3
+   0.1.0
 
 COMMANDS:
    help, h  Shows a list of commands or help for one command

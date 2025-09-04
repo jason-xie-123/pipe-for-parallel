@@ -1,3 +1,3 @@
-## Changelog for v0.1.3
+## Changelog for v0.1.0
 
 - init
