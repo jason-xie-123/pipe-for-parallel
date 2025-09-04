@@ -26,7 +26,7 @@ if [ ! -f "$NOTES_FILE" ]; then
     exit 1
 fi
 
-PROJECT_NAME="windows-safe-pipe"
+PROJECT_NAME="pipe-for-parallel"
 
 RELEASE_DIR="$PROJECT_FOLDER/release"
 mkdir -p "$RELEASE_DIR"

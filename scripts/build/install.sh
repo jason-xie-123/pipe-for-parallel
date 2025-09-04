@@ -12,6 +12,6 @@ cd "$SHELL_FOLDER" || exit >/dev/null 2>&1
 # shellcheck source=/dev/null
 source "$PROJECT_FOLDER/scripts/base/env.sh"
 
-go install windows-safe-pipe
+go install pipe-for-parallel
 
 cd "$OLD_PWD" || exit >/dev/null 2>&1

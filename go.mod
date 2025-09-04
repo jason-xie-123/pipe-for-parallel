@@ -1,4 +1,4 @@
-module windows-safe-pipe
+module pipe-for-parallel
 
 go 1.20
 

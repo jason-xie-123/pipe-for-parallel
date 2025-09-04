@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	packageVersion "windows-safe-pipe/version"
+	packageVersion "pipe-for-parallel/version"
 )
 
 func main() {

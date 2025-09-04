@@ -4,15 +4,15 @@ import (
 	"context"
 	"fmt"
 	"os"
-	packageVersion "windows-safe-pipe/version"
+	packageVersion "pipe-for-parallel/version"
 
 	"github.com/urfave/cli/v2"
 )
 
 func main() {
 	app := &cli.App{
-		Name:    "windows-safe-pipe",
-		Usage:   "CLI tool to echo windows safe pipe scripts",
+		Name:    "pipe-for-parallel",
+		Usage:   "CLI tool to pipe-for-parallel scripts",
 		Version: packageVersion.Version,
 		Flags: []cli.Flag{
 			&cli.StringFlag{

@@ -1,12 +1,12 @@
 # How to Use
 
 ```
-./windows-safe-pipe-386.exe -h
+./pipe-for-parallel -h
 NAME:
-   windows-safe-pipe - CLI tool to echo windows safe pipe scripts
+   pipe-for-parallel - CLI tool to pipe-for-parallel scripts
 
 USAGE:
-   windows-safe-pipe [global options] command [command options]
+   pipe-for-parallel [global options] command [command options]
 
 VERSION:
    0.1.3

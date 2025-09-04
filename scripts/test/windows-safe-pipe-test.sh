@@ -16,9 +16,9 @@ ROOT_PROJECT="$SHELL_FOLDER/../.."
 PIPE_NAME="safe-pipe-test-1"
 
 if [ "$(is_darwin_platform)" == "true" ]; then
-    TEST_BINARY="$ROOT_PROJECT/release/windows-safe-pipe-darwin-arm64"
+    TEST_BINARY="$ROOT_PROJECT/release/pipe-for-parallel-darwin-arm64"
 elif [ "$(is_windows_platform)" == "true" ]; then
-    TEST_BINARY="$ROOT_PROJECT/release/windows-safe-pipe-windows-arm64"
+    TEST_BINARY="$ROOT_PROJECT/release/pipe-for-parallel-windows-arm64"
 else
     echo ""
     echo "[ERROR]: only support darwin and windows platform"
@@ -32,7 +32,7 @@ read_func() {
     COMMAND="\"$TEST_BINARY\" --action=read --pipe=\"$PIPE_NAME\""
     if ! eval "$COMMAND"; then
         echo ""
-        echo "[ERROR]: failed to exec windows-safe-pipe read operation"
+        echo "[ERROR]: failed to exec pipe-for-parallel read operation"
         echo ""
 
         exit 1
@@ -44,7 +44,7 @@ write_func() {
     COMMAND="\"$TEST_BINARY\" --action=write --pipe=\"$PIPE_NAME\" --message=\"$msg\""
     if ! eval "$COMMAND"; then
         echo ""
-        echo "[ERROR]: failed to exec windows-safe-pipe write operation"
+        echo "[ERROR]: failed to exec pipe-for-parallel write operation"
         echo ""
 
         exit 1
@@ -62,7 +62,7 @@ exit_pipe() {
     COMMAND="\"$TEST_BINARY\" --action=exit --pipe=\"$PIPE_NAME\""
     if ! eval "$COMMAND"; then
         echo ""
-        echo "[ERROR]: failed to exec windows-safe-pipe exit operation"
+        echo "[ERROR]: failed to exec pipe-for-parallel exit operation"
         echo ""
 
         exit 1
@@ -92,7 +92,7 @@ end_time_1=$(date +%s)
 execution_time_1=$((end_time_1 - start_time_1))
 echo ""
 echo "----------------------------------------"
-echo "Execution time [windows-safe-pipe-test]: $execution_time_1 seconds"
+echo "Execution time [pipe-for-parallel-test]: $execution_time_1 seconds"
 echo "----------------------------------------"
 echo ""
 
